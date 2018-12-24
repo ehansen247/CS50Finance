@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+<!-- Creates a data table-->
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Name</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Price</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+
+        <!-- Completes the data table by filling in data passed from csv file-->
+        <tbody>
+            {% for share in portfolio %}
+                <tr>
+                    <td>{{ share['symbol'] }}</td>
+                    <td>{{ share['name'] }}</td>
+                    <td>{{ share['number'] }}</td>
+                    <td>{{ share['price'] }}</td>
+                    <td>{{ share['shareCost'] }}</td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td>CASH</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{ cash }}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> {{ total }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

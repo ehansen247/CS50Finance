@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action="/register" id="main_form" method="post">
+        <div class="form-group">
+            <input id='user' autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="form-group">
+            <input id='pw' class="form-control" name="password" placeholder="Password" type="password">
+        </div>
+        <div class="form-group">
+            <input id='confirm' class="form-control" name="confirmation" placeholder="Confirm password" type="password">
+        </div>
+        <button id = "submit-button" class="btn btn-primary" type="submit">Register</button>
+    </form>
+{% endblock %}
+
+{% block script %}
+    <script>
+
+        // Stops the form from being submitted
+        document.getElementById("main_form").addEventListener("submit", function(e)
+        {
+            e.preventDefault();
+
+            // Calls the check function on the server-side. If the username is available, the form is submitted.
+            $.get("check", {"username":$("#user").val()}, function(data) {
+                if(data)
+                {
+                    $("#main_form").submit();
+                }
+                else
+                {
+                    alert("That username is taken, please enter a different one.");
+                }
+            });
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form method="post">
+        <div class="form-group">
+            <input autofocus class="form-control" type='text' name='symbol' placeholder='Symbol'>
+        </div>
+        <div class="form-group">
+            <button type='submit' class="btn btn-primary">Quote</button>
+        </div>
+    </form>
+{% endblock %}
