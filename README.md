@@ -6,6 +6,7 @@ This project creates a website that allows user's to register an account and the
 ## Flask
 The project is built off the Flask's lightweight but simple web framework. The requisite Flask files should be downloaded when the project is cloned but if not, follow the instructions to download Flask here: http://flask.pocoo.org/docs/1.0/installation/. 
 You will also need to download the requests and flask_session modules, which are not build-in. 
+
 To download requests:
 For OSX/Linux: sudo pip install requests
 For Windows: pip install requests
@@ -20,12 +21,12 @@ The project utilized SQLite3 to store registered users' information. To view the
 ## Running the Project:
 To run the website on the local host, change into the CS50Finance directory in the command line, then change into the flask directory, then enter "flask run." In the block below, you will see the homepage url, usually http://127.0.0.1:5000/. 
 
-## Common Exception:
-### 1. ModuleNotFoundError: No module named 'requests' or No module named 'flask_session'
+### Common Exceptions:
+#### 1. ModuleNotFoundError: No module named 'requests' or No module named 'flask_session'
 Requests and flask_session are not built-in modules in Flask. To download them, consult the directions above under the Flask heading.
-### 2. Error: Could not import "some_string".
+#### 2. Error: Could not import "some_string".
 Make sure you are in the flask directory within CS50Finance.
 For OSX/Linux: export FLASK_APP=app.py
 For Windows: set FLASK_APP=app.py
 More information if still not working: http://flask.pocoo.org/docs/1.0/cli/
-### 3. If you receive a different error, let me know
+#### 3. If you receive a different error, let me know
