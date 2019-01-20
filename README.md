@@ -7,7 +7,7 @@ This project creates a website that allows user's to register an account and the
 The project is built off the Flask's lightweight but simple web framework. The requisite Flask files should be downloaded when the project is cloned but if not, follow the instructions to download Flask here: http://flask.pocoo.org/docs/1.0/installation/. 
 You will also need to download the requests and flask_session modules, which are not build-in. 
 
-To download requests:
+To download requests (use pip3 instead of pip if necessary):
 For OSX/Linux: sudo pip install requests
 For Windows: pip install requests
 
