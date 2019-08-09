@@ -9,11 +9,13 @@ The requisite Flask files should be downloaded when the project is cloned but if
 You will also need to download the requests and flask_session modules, which are not build-in. 
 
 Download requests:
-For OSX/Linux: sudo pip install requests
-For Windows: pip install requests
+For OSX/Linux: 
+```sudo pip install requests```
+For Windows: 
+```pip install requests```
 
-Download flask_session:
-pip install flask_session
+Download flask_session:  
+```pip install flask_session```
 
 
 ### Running the Project:
@@ -25,9 +27,9 @@ cd CS50Finance; cd flask; flask run
 While running, the application will be accessible at http://127.0.0.1:5000/. 
 
 ### Troubleshooting:
-#### 1. ModuleNotFoundError: No module named 'requests' or No module named 'flask_session'
+1. ```ModuleNotFoundError: No module named 'requests' or No module named 'flask_session'```
 Requests and flask_session are not built-in to Flask. To download them, the instructions under the "Requisite Packages" header.  
-#### 2. Error: Could not import "some_string".
+2. ```Error: Could not import "some_string".```
 Make sure you are in the flask directory within CS50Finance.
 For OSX/Linux: export FLASK_APP=app.py
 For Windows: set FLASK_APP=app.py
