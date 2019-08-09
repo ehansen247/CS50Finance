@@ -2,9 +2,9 @@
 Create an account, login, and start trading virtual stocks. Developed within Harvard's Introduction to Computer Science course, CS50 and adapted to make the project accessible outside of CS50's customized IDE. 
 
 ### Requisite Packages
-The project is built off the Flask's lightweight but simple web framework.  
+The project is built off Flask's lightweight but simple web framework.  
 
-The requisite Flask files should be downloaded when the project is cloned but if not, follow the instructions to [download Flask](http://flask.pocoo.org/docs/1.0/installation/). 
+The requisite Flask files should be downloaded when the project is cloned, but, if not, follow the instructions to [download Flask](http://flask.pocoo.org/docs/1.0/installation/). 
 
 You will also need to download the requests and flask_session modules, which are not build-in.   
 
