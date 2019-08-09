@@ -38,7 +38,7 @@ While running, the application will be accessible at http://127.0.0.1:5000/.
 Requests and flask_session are not built-in to Flask. To download them, the instructions under the "Requisite Packages" header.  
   
 2. ``` Error: Could not import "some_string". ```  
-Check that you're current working directory is the flask folder within CS50Finance. [More information](http://flask.pocoo.org/docs/1.0/cli/).
+Check that you're current working directory is the flask folder within CS50Finance([see more information](http://flask.pocoo.org/docs/1.0/cli/)).  
 For OSX/Linux:  
 ```
 export FLASK_APP=app.py  
