@@ -1,5 +1,7 @@
 ## Introduction
-Create an account, login, and start trading stocks. Allows user to add to their virtual account balance, search, buy, sell, and quote real stocks, and see their transaction history. 
+A Flask-based Web Application developed with Python and SQLite3.
+
+Create an account, login, and start trading stocks. Allows users to add to their virtual account balance, search, buy, sell, and quote real stocks, and see their transaction history. 
 
 Adapted from Harvard's Introduction to Computer Science course, CS50, to make the project accessible outside of CS50's customized IDE. 
 
@@ -26,7 +28,7 @@ pip install flask_session
 ```
 
 
-### Running the Project:
+### Launching the Web Application:
 After cloning the project...
 ```
 cd CS50Finance; cd flask; flask run
