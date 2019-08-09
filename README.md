@@ -1,5 +1,5 @@
 ## Introduction
-Create an account, login, and start trading virtual stocks. Developed within Harvard's Introduction to Computer Science course, CS50 and adapted to make the project accessible outside of CS50's customized IDE. 
+Create an account, login, and start trading virtual stocks. Adapted from Harvard's Introduction to Computer Science course, CS50, to make the project accessible outside of CS50's customized IDE. 
 
 ### Requisite Packages
 The project is built off Flask's lightweight but simple web framework.  
